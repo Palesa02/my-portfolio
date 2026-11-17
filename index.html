@@ -112,10 +112,21 @@ footer{text-align:center;padding:40px;background:var(--footer-bg);color:var(--fo
 a{color:var(--dusty-pink);text-decoration:none;}
 a:hover{color:var(--dark);}
 
+/* --- NEW FIX: WHITE STRIP ON PROJECT IMAGES --- */
+.proj{overflow:hidden;padding:0 !important}
+.proj img{display:block;width:100%;height:200px;object-fit:cover;object-position:top;margin:0 !important;border:none !important;border-radius:18px 18px 0 0 !important;background:var(--card-bg)}
+.proj h4,.proj p,.proj>div{padding-left:25px;padding-right:25px}
+.proj h4{padding-top:20px}
+.proj>div:last-child{padding-bottom:25px}
+
 /* --- MOBILE FIXES: HAMBURGER + CAREER + HERO --- */
 @media (max-width: 768px) {
   body, a, button, .theme-toggle { cursor: auto; }
   #cursor-dot, #cursor-ring { display: none; }
+  html, body { background: var(--bg) !important; }
+  #tech-bg { background: var(--bg) !important; }
+  section { background: transparent !important; }
+  #experience, #about { background: var(--section-alt) !important; }
 
   nav { padding: 16px 20px; }
   .menu-toggle { display: block; }
@@ -305,7 +316,7 @@ generative AI, APIs and real-world AI solutions, collaborating on AI projects wh
   </div>
   <a href="mailto:makhenereabetswe03@gmail.com" class="hello-btn">Say Hello!</a>
   <br>
-  <p class="footer-credit">Made with ♡ by Reabetswe Makhene - 2026</p>
+  <p class="footer-credit">Made with ♡ by Reabetswe Makhene — 2026</p>
 </footer>
 
 <script>
