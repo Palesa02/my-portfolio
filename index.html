@@ -112,7 +112,14 @@ footer{text-align:center;padding:40px;background:var(--footer-bg);color:var(--fo
 a{color:var(--dusty-pink);text-decoration:none;}
 a:hover{color:var(--dark);}
 
-/* --- NEW FIX: WHITE STRIP ON PROJECT IMAGES --- */
+/* --- SKILLS --- */
+.skills-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.skill-pill{background:var(--card-bg);border:1px solid var(--card-border);padding:8px 16px;border-radius:999px;font-size:0.85rem;transition:0.3s}
+.skill-pill:hover{background:var(--dusty-pink);color:white;transform:translateY(-2px)}
+.skills-group{margin-top:22px}
+.skills-group h4{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:10px;color:var(--dark)}
+
+/* --- WHITE STRIP FIX ON PROJECT IMAGES --- */
 .proj{overflow:hidden;padding:0 !important}
 .proj img{display:block;width:100%;height:200px;object-fit:cover;object-position:top;margin:0 !important;border:none !important;border-radius:18px 18px 0 0 !important;background:var(--card-bg)}
 .proj h4,.proj p,.proj>div{padding-left:25px;padding-right:25px}
@@ -190,7 +197,7 @@ a:hover{color:var(--dark);}
   <div class="logo">RM.</div>
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
   <div class="nav-links" id="navLinks">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
   </div>
 </nav>
@@ -250,6 +257,53 @@ I am a <strong style="color:var(--dusty-pink)">Software Developer</strong> with 
     <strong style="color:var(--dusty-pink)">Beyond the screen, </strong> I'm a dancer who finds freedom in movement, a foodie always chasing good flavors, and a music lover whose playlists inspire my next creation. I build with logic, 
     but I live with rhythm.</section>
 
+<section id="skills" style="transition:background 0.4s">
+  <p class="section-tag">Skills</p>
+  <h2>What I Work With</h2>
+
+  <div class="skills-group">
+    <h4>Languages</h4>
+    <div class="skills-wrap">
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">HTML / CSS / JavaScript</span>
+      <span class="skill-pill">SQL</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h4>Web & Development</h4>
+    <div class="skills-wrap">
+      <span class="skill-pill">Responsive Web Design</span>
+      <span class="skill-pill">Git & GitHub</span>
+      <span class="skill-pill">APIs & REST APIs</span>
+      <span class="skill-pill">Streamlit</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h4>Cloud</h4>
+    <div class="skills-wrap">
+      <span class="skill-pill">AWS - EC2, S3, Lambda, IAM</span>
+      <span class="skill-pill">Amazon Bedrock & SageMaker</span>
+      <span class="skill-pill">Cloud Support & Troubleshooting</span>
+      <span class="skill-pill">Linux & Networking</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h4>AI / Data</h4>
+    <div class="skills-wrap">
+      <span class="skill-pill">Machine Learning - scikit-learn</span>
+      <span class="skill-pill">Generative AI</span>
+      <span class="skill-pill">Prompt Engineering</span>
+      <span class="skill-pill">Data Analysis - Pandas</span>
+      <span class="skill-pill">Natural Language Processing (NLP)</span>
+    </div>
+  </div>
+
+  <p style="margin-top:22px;color:var(--text-muted);font-size:0.9rem">Soft skills: Problem-solving • Collaboration • Communication • Attention to detail</p>
+</section>
+
 <section id="experience" style="background:var(--section-alt);transition:background 0.4s"><p class="section-tag">Experience</p>
   <h2>Where I've Grown</h2><div class="exp-grid"><div class="exp">
     <h4>Cloud Support Associate Intern</h4><div class="company">Amazon Web Services (AWS)</div>
@@ -261,11 +315,8 @@ generative AI, APIs and real-world AI solutions, collaborating on AI projects wh
 <section id="projects" style="transition:background 0.4s"><p class="section-tag">Projects</p><h2>Selected Work</h2>
   <div class="projects">
     <div class="proj"><img src="portfolio picture.png" alt="Portfolio">
-      <h4>Portfolio Website</h4><p>Built a responsive portfolio.</p><br>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a href="https://palesa02.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer" style="background:#C08497; color:white; padding:10px 20px; border-radius:30px; display:inline-block;">🚀 View Live Demo</a>
-        <a href="https://github.com/Palesa02/my-portfolio" target="_blank" rel="noopener noreferrer" style="border:1px solid #C08497; padding:10px 20px; border-radius:30px; display:inline-block;">GitHub →</a>
-      </div>
+      <h4>Portfolio Website</h4><p>Built a responsive personal portfolio showcasing my skills, 
+        certifications, projects and experience in software development, cloud, data and AI</p>
     </div>
 
     <div class="proj"><img src="balance-bowl.jpeg" alt="Balance Bowl">
@@ -316,7 +367,7 @@ generative AI, APIs and real-world AI solutions, collaborating on AI projects wh
   </div>
   <a href="mailto:makhenereabetswe03@gmail.com" class="hello-btn">Say Hello!</a>
   <br>
-  <p class="footer-credit">Made with ♡ by Reabetswe Makhene — 2026</p>
+  <p class="footer-credit">Made with ♡ by Reabetswe Makhene - 2026</p>
 </footer>
 
 <script>
